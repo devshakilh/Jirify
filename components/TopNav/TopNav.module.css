@@ -1,0 +1,18 @@
+.languageChange {
+  z-index: 1000;
+}
+.languageChange {
+  background: #f7f7f7;
+}
+.languageChange .react-select__option {
+  z-index: 999;
+}
+.languageChange {
+  z-index: 1000;
+}
+.languageChange {
+  background: #f7f7f7;
+}
+.languageChange .react-select__option {
+  z-index: 999;
+}

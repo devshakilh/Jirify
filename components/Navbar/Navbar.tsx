@@ -2,16 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import NavLinks from "./NavLinks";
-import { links, searchLinks } from "./NavLinksData";
+import { searchLinks } from "./NavLinksData";
 import logo from "../../assets/images/logo.png";
-import { FaBars, FaRegUser } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 import { GrMenu, GrSearch } from "react-icons/gr";
-import { FiSearch } from "react-icons/fi";
 import { useRouter } from "next/router";
 import { useDebounce } from "use-debounce";
 import { IoCloseOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import MobileNav from "./MovileNav";
+import LoginRegisterModal from "./LoginRegisterModal";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -58,11 +58,11 @@ const Navbar = () => {
     <nav
       className={`bg-white ${
         openInput && "border-t-2 border-t-[#ffb70a]"
-      } z-[999] relative font-[Segoe UI] h-[70px] shadow-md`}
+      } z-[999] sticky top-0 font-[Segoe UI] h-[70px] shadow-md`}
     >
       <div
         className={
-          "w-11/12 mx-auto h-full flex items-center justify-between font-medium"
+          "mx-auto h-full main-container  flex items-center justify-between font-medium"
         }
       >
         {!mobileOpenInput && (
@@ -108,7 +108,7 @@ const Navbar = () => {
                 </span>
               </div>
               {openInput && (
-                <div className="flex items-center w-[5rem] md:w-[40rem] lg:w-[65vw] absolute left-[-20px] md:left-[-40rem] lg:left-[-65vw] border-b-2 border-[#3B7DED] transition-all ease-in duration-700 bg-[#F4F4F4] h-full">
+                <div className="flex items-center w-[5rem] md:w-[40rem] lg:w-[60vw] absolute right-0 border-b-2 border-[#3B7DED] transition-all ease-in duration-700 bg-[#F4F4F4] h-full">
                   <input
                     type="text"
                     className="input text-lg bg-transparent focus:border-none focus:outline-none input-md w-full h-8 border-none"
@@ -161,68 +161,9 @@ const Navbar = () => {
                   Sign In
                 </span>{" "}
                 <FaRegUser className="ml-1 w-4 text-sm" />
-                {/* <Image
-                src={userIcon}
-                style={{ height: "16px", width: "16px", marginLeft: "5px" }}
-                alt="user icon"
-              /> */}
               </div>
 
-              {openModal && (
-                <div className="absolute z-50 bg-white md:w-88 top-[4.5rem] right-4 md:right-10 p-8 transition-all ease-in-out shadow-lg rounded-md">
-                  <div className="flex justify-between">
-                    <Image
-                      src={logo}
-                      alt="logo"
-                      style={{ objectFit: "contain" }}
-                      width="180"
-                    />
-                    <button
-                      className="text-md"
-                      onClick={() => setOpenModal(false)}
-                    >
-                      <IoCloseOutline fontSize={25} />
-                    </button>
-                  </div>
-                  <div className="mt-12 flex gap-5">
-                    <div>
-                      <Link
-                        href="/authentication/signup"
-                        className="cursor-pointer flex items-center justify-center md:px-11 w-full py-2 rounded-sm border border-slate-300 text-[10px] md:text-sm hover:bg-[#3B7DED] hover:text-white mb-3"
-                      >
-                        <span>Sign Up</span>
-                      </Link>
-                      <p className="text-[9px] md:text-[14px]">
-                        You have account?{" "}
-                        <Link
-                          className="text-[#3B7DED]"
-                          href="/authentication/signin"
-                        >
-                          Sign In
-                        </Link>
-                      </p>
-                    </div>
-                    <div>
-                      <Link
-                        href="/authentication/signin"
-                        className="cursor-pointer flex items-center justify-center md:px-11 w-full py-2 rounded-sm border border-slate-300 hover:bg-[#3B7DED] hover:text-white mb-3 text-[10px] md:text-sm"
-                      >
-                        <span>Sign In</span>
-                      </Link>
-
-                      <p className=" text-[9px] md:text-[14px]">
-                        You have no account?{" "}
-                        <Link
-                          className="text-[#3B7DED]"
-                          href="/authentication/signup"
-                        >
-                          Sign Up
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              )}
+              {openModal && <LoginRegisterModal setOpenModal={setOpenModal} />}
             </div>
           </div>
         )}

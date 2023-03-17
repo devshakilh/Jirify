@@ -1,11 +1,11 @@
+import Layout from "@/layouts/Layout/Layout";
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 
 const HomeComponent = () => {
   return (
-    <>
-      <Navbar />
-    </>
+    <Layout addContainer>
+      <div></div>
+    </Layout>
   );
 };
 
