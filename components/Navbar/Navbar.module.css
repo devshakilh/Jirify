@@ -1,0 +1,21 @@
+.menuShadow {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 35, 44, 0.8);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  visibility: hidden;
+}
+.menuActive.menuShadow {
+  opacity: 1;
+  visibility: visible;
+}
+.navLink {
+  transition: all 0.3s ease-in-out;
+}
+.navLink:active {
+  background: lightskyblue;
+}
