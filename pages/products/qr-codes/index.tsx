@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bannerTop from '../../../assets/qr-code/qr-codes_desktop@3x-1.png'
+import bannerTop from '../../../assets/qr-code/qr-codes_mobile.png'
 import image2 from '../../../assets/qr-code/maintain-consistency.svg'
 import image1 from '../../../assets/qr-code/increase-conversions.svg'
 import image3 from '../../../assets/qr-code/chart-inspect-1.svg'
@@ -19,7 +19,7 @@ const QrCodes = () => {
     return (
         <div>
             <div className='py-20 lg:pl-24 px-8 lg:flex'>
-                <div className='w-2/4'>
+                <div className='lg:w-2/4'>
                     <p className='font-bold py-4 text-x'>QR Codes</p>
                     <h1 className='text-6xl font-bold'>Engage customers, one scan at a time </h1>
                     <p className='text-2xl text-[#56575b] py-4'>No matter how simple or advanced your QR Code needs, Bitly and our newest family member, QR Code Generator, have you covered.</p>
@@ -27,8 +27,8 @@ const QrCodes = () => {
                         <button className='text-xl text-white px-8 py-4 bg-blue-500 hover:bg-blue-600 rounded-md'>Explore QR Code Solutions</button>
                     </div>
                 </div>
-                <div className='w-2/4'>
-                    <Image src={bannerTop} alt='' />
+                <div className='lg:w-2/4 '>
+                    <Image className='' src={bannerTop} alt='' />
                 </div>
             </div>
             <div className='px-8 lg:px-24'>
@@ -74,7 +74,7 @@ const QrCodes = () => {
 
                 <div className='lg:flex gap-4'>
                     <div className='card shadow-2xl py-6 px-8'>
-                        <div className='justify-center'>
+                        <div className='flex justify-center'>
                             <Image
 
                                 src={image4}
@@ -128,7 +128,7 @@ const QrCodes = () => {
                         </div>
                     </div>
                     <div className='card shadow-2xl px-8 py-6'>
-                        <div className='text-center'>
+                        <div className='flex justify-center'>
                             <Image
 
                                 src={image9}
@@ -190,7 +190,7 @@ const QrCodes = () => {
             </div>
             <div className='lg:px-24 px-8'>
                 <h1 className='text-3xl font-bold text-center py-10'>Loved by big and small brands everywhere</h1>
-                <div className='grid sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-5 gap-8 py-4'>
+                <div className='grid sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-center py-4'>
                     <Image
 
                         src={image10}
