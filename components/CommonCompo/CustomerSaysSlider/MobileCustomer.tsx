@@ -13,10 +13,10 @@ export default function MobileCustomer() {
     const swiper1Ref = useRef<any>();
     const swiper2Ref = useRef<any>();
 
-    useLayoutEffect(() => {
-        swiper1Ref.current.controller.control = swiper2Ref.current;
-        swiper2Ref.current.controller.control = swiper1Ref.current;
-    }, []);
+    // useLayoutEffect(() => {
+    //     swiper1Ref.current.controller.control = swiper2Ref.current;
+    //     swiper2Ref.current.controller.control = swiper1Ref.current;
+    // }, []);
 
     return (
         <div className="md:hidden mt-10" >
