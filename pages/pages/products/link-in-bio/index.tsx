@@ -1,22 +1,22 @@
 import Image from 'next/image';
-import bannerTop from '../../../assets/link-in-bio/lib_mobile.png'
-import image1 from '../../../assets/link-in-bio/link-in-bio-drive-traffic.png'
-import image2 from '../../../assets/link-in-bio/bitly-branding-LIB.png'
-import image3 from '../../../assets/link-in-bio/Bitly_Manage-Links_LIB.png'
-import image4 from '../../../assets/link-in-bio/custom-domain-4-1.svg'
-import image5 from '../../../assets/link-in-bio/chart-inspect-2.svg'
-import image6 from '../../../assets/link-in-bio/redirect-link-1.svg'
-import image10 from '../../../assets/qr-code/novasol.svg'
-import image11 from '../../../assets/qr-code/new-york-times.svg'
-import image12 from '../../../assets/qr-code/marriott.svg'
-import image13 from '../../../assets/qr-code/electronic-arts.svg'
-import image14 from '../../../assets/qr-code/big-fish.svg'
+import bannerTop from '../../../../assets/link-in-bio/lib_mobile.png'
+import image1 from '../../../../assets/link-in-bio/link-in-bio-drive-traffic.png'
+import image2 from '../../../../assets/link-in-bio/bitly-branding-LIB.png'
+import image3 from '../../../../assets/link-in-bio/Bitly_Manage-Links_LIB.png'
+import image4 from '../../../../assets/link-in-bio/custom-domain-4-1.svg'
+import image5 from '../../../../assets/link-in-bio/chart-inspect-2.svg'
+import image6 from '../../../../assets/link-in-bio/redirect-link-1.svg'
+import image10 from '../../../../assets/qr-code/novasol.svg'
+import image11 from '../../../../assets/qr-code/new-york-times.svg'
+import image12 from '../../../../assets/qr-code/marriott.svg'
+import image13 from '../../../../assets/qr-code/electronic-arts.svg'
+import image14 from '../../../../assets/qr-code/big-fish.svg'
 import { AiOutlineCheck } from "react-icons/ai";
 const LinkInBio = () => {
     return (
         <div >
             <div className='lg:px-24 px-8'>
-                <div className='py-20 lg:flex'>
+                <div className='py-20 lg:flex items-center'>
                     <div className='lg:w-2/4'>
                         <p className='font-bold py-4 text-x'>Link-in-bios</p>
                         <h1 className='text-6xl font-bold'>Make your social media profiles work harder </h1>
