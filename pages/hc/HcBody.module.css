@@ -1,0 +1,48 @@
+
+
+.hero_inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 639px)  {
+    .newStyle {
+        width: 100vw!important;
+        /* margin-left: -128px!important; */
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px)  {
+    .newStyle {
+        width: 100vw!important;
+        margin-left: -16px!important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+    .newStyle {
+        width: 100vw!important;
+        margin-left: -48px!important;
+    }
+}
+@media only screen and (min-width: 992px)  {
+    .newStyle {
+        width: 100vw!important;
+        margin-left: -128px!important;
+    }
+}
+
+
+
+
+.hero {
+    background-image: url(https://theme.zdassets.com/theme_assets/1164610/fed7960ad9831d977f654e2d4164ec55763325e3.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
