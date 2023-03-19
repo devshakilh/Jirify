@@ -15,7 +15,7 @@ const HcRoute = () => {
 
     return (
         <Layout addContainer>
-            <div className="mt-5 flex justify-between items-center">
+            <div className="mt-5 flex flex-col items-start md:flex-row md:justify-between md:items-center mx-5 md:mx-0 gap-3">
                 <div className="text-sm breadcrumbs">
                     <ul>
                         <li>Jirily Support</li>
@@ -30,7 +30,7 @@ const HcRoute = () => {
                 </div>
             </div>
 
-            <section className='my-20 flex'>
+            <section className='my-20 flex mx-5 md:mx-0'>
                 <div className="lg:w-1/5"></div>
                 {
                     filteredData.map(item =>
