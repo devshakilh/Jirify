@@ -20,7 +20,7 @@ const HomeComponent = () => {
   const handleBannerBtn = () => router.push("/")
   const handleGetQuote = () => router.push("/")
   // const handleStartFree = (item: any) =>  console.log(item);
-  
+
 
   return (
     <Layout addContainer>
