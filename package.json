@@ -23,6 +23,7 @@
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "react-select": "^5.7.0",
+    "react-toggle-button": "^2.2.0",
     "swiper": "^9.1.1",
     "typescript": "5.0.2",
     "use-debounce": "^9.0.3"
