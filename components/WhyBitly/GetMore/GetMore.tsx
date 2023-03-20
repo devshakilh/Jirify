@@ -7,7 +7,7 @@ const GetMore = () => {
         <div className="section overflow-hidden">
       <div className="main-container">
         <div className="md:flex justify-between items-center pt-10">
-            <Image className="w-1/2" src={img1} alt="" />
+            <Image className="w-full md:w-1/2" src={img1} alt="" />
           <div className="ml-4">
             <h3 className="text-[32px] font-bold leading-8 text-[#2a2e30] mb-4">
               Get more clicks with custom links
