@@ -13,10 +13,10 @@ const RecognizedBrands = () => {
             The most recognized brands in the world love Bitly
                 </h3>
                 <div className="flex w-full md:w-1/2 mx-auto justify-between">
-                    <Image src={img1} alt=""/>
-                    <Image src={img2} alt=""/>
-                    <Image src={img3} alt=""/>
-                    <Image src={img4} alt=""/>
+                    <Image className='w-1/4' src={img1} alt=""/>
+                    <Image className='w-1/4' src={img2} alt=""/>
+                    <Image className='w-1/4' src={img3} alt=""/>
+                    <Image className='w-1/4' src={img4} alt=""/>
                 </div>
             </div>
         </div>
