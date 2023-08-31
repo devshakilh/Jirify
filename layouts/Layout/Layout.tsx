@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import TopNav from "../../components/TopNav/TopNav";
+import Footer from "@/components/Footer/Footer";
+
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -24,6 +26,8 @@ const Layout = ({
       ) : children ? (
         children
       ) : null}
+
+      <Footer />
     </>
   );
 };

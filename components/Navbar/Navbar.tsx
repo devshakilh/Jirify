@@ -56,9 +56,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-white ${
-        openInput && "border-t-2 border-t-[#ffb70a]"
-      } z-[999] sticky top-0 font-[Segoe UI] h-[70px] shadow-md`}
+      className={`bg-white ${openInput && "border-t-2 border-t-black"
+        } z-[999] sticky top-0 font-[Segoe UI] h-[70px] shadow-md`}
     >
       <div
         className={
@@ -70,17 +69,17 @@ const Navbar = () => {
             <div className="md:mb-2 md:w-auto w-full flex justify-between">
               <Link href="/">
                 {" "}
-                <Image
+                {/* <Image
                   src={logo}
                   alt="photo"
                   className="md:cursor-pointer w-[160px] md:w-[180px] h-9 object-contain"
-                />
+                /> */}
+                <p className="md:cursor-pointer w-[160px] md:w-[180px] text-4xl font-bold h-9 object-contain">Jirify</p>
               </Link>
             </div>
             <ul
-              className={`${
-                openInput && "md:hidden lg:hidden"
-              } md:flex items-center hidden uppercase text-black md:justify-between px-2`}
+              className={`${openInput && "md:hidden lg:hidden"
+                } md:flex items-center hidden uppercase text-black md:justify-between px-2`}
             >
               <NavLinks />
             </ul>
@@ -95,10 +94,9 @@ const Navbar = () => {
             <div className="relative h-full">
               <div
                 onClick={() => setOpenInput(true)}
-                className={`${
-                  !openInput &&
+                className={`${!openInput &&
                   "md:flex justify-center h-full items-center cursor-pointer"
-                } hidden`}
+                  } hidden`}
               >
                 <button className="w-[68px] cursor-pointer pl-2 pr-0 rounded-md border-none focus:border-none focus:outline-none">
                   Search
@@ -153,9 +151,8 @@ const Navbar = () => {
 
             <div ref={clickRef} className="">
               <div
-                className={`flex justify-center items-center text-sm lg:text-lg relative cursor-pointer ${
-                  openModal && "text-red-400"
-                } w-20 md:mt-[0.5px]`}
+                className={`flex justify-center items-center text-sm lg:text-lg relative cursor-pointer ${openModal && "text-red-400"
+                  } w-20 md:mt-[0.5px]`}
               >
                 <span className="text-sm" onClick={() => setOpenModal(false)}>
                   Sign In
@@ -194,9 +191,8 @@ const Navbar = () => {
               setMobileOpenInput(false);
             }
           }}
-          className={`text-[22px] md:hidden z-50 ${
-            mobileOpenInput ? "mx-auto" : "mr-5"
-          }`}
+          className={`text-[22px] md:hidden z-50 ${mobileOpenInput ? "mx-auto" : "mr-5"
+            }`}
         >
           {mobileOpenInput ? <IoCloseOutline fontSize={35} /> : <GrSearch />}
         </div>

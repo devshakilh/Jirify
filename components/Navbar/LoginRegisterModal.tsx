@@ -12,12 +12,14 @@ const LoginRegisterModal = ({
   return (
     <div className="absolute z-50 bg-white top-[4.5rem] right-4 md:right-[128px] px-12 py-8 transition-all ease-in-out shadow-lg rounded-md">
       <div className="flex justify-between">
-        <Image
+        {/* <Image
           src={logo}
           alt="logo"
           style={{ objectFit: "contain" }}
           width="180"
-        />
+        /> */}
+
+        <p className="md:cursor-pointer w-[160px] md:w-[180px] text-4xl font-bold h-9 object-contain">Jirify</p>
         <button className="text-md" onClick={() => setOpenModal(false)}>
           <IoCloseOutline fontSize={25} />
         </button>
